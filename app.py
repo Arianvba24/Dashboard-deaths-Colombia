@@ -8,13 +8,9 @@ from streamlit_folium import st_folium
 from streamlit_folium import folium_static
 from geopy.geocoders import Nominatim
 import folium
-import gwdown
 
 
-url = r'https://drive.google.com/file/d/1_f2dqLpyXMUXEwt5hNFMKVevzURiuJ4P/view?usp=drive_link'
 
-temp_file = 'raw_data.csv'
-gdown.download(url, temp_file, quiet=False)
 
 def obtener_coordenadas(ciudad,pais):
     try:
@@ -36,8 +32,8 @@ def main():
     st.set_page_config(page_title="Dashboard muertes colombia",layout="wide")
     valores = st.sidebar.selectbox("Menu",["Dashboard","About"])
     
-    path = r"raw_data.csv"
-    df = pd.read_csv(path,index_col="Indice",low_memory = False)
+    path = r"raw_data.parquet"
+    df = pd.read_parquet(path)
     df["fecha_hecho"] = pd.to_datetime(df["fecha_hecho"],format="%d/%m/%Y")
     df["Año"] = df["fecha_hecho"].dt.year
 
