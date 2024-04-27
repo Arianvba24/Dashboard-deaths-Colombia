@@ -74,7 +74,7 @@ def main():
     if valores == "Dashboard":
         
 
-        st.title("Gráfico de muertes en colombia desde el año 2010")
+        st.title("Muertes por violencia doméstica en Colombia desde el año 2010")
 
         if len(genero) > 0 and len(rango_edad) > 0:
             
