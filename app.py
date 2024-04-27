@@ -8,6 +8,13 @@ from streamlit_folium import st_folium
 from streamlit_folium import folium_static
 from geopy.geocoders import Nominatim
 import folium
+import gwdown
+
+
+url = r'https://drive.google.com/file/d/1_f2dqLpyXMUXEwt5hNFMKVevzURiuJ4P/view?usp=drive_link'
+
+temp_file = 'raw_data.csv'
+gdown.download(url, temp_file, quiet=False)
 
 def obtener_coordenadas(ciudad,pais):
     try:
