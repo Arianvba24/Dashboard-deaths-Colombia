@@ -29,7 +29,7 @@ def main():
     st.set_page_config(page_title="Dashboard muertes colombia",layout="wide")
     valores = st.sidebar.selectbox("Menu",["Dashboard","About"])
     
-    path = r"C:\Users\Cash\Downloads\archive\raw_data.csv"
+    path = r"raw_data.csv"
     df = pd.read_csv(path,index_col="Indice",low_memory = False)
     df["fecha_hecho"] = pd.to_datetime(df["fecha_hecho"],format="%d/%m/%Y")
     df["Año"] = df["fecha_hecho"].dt.year
