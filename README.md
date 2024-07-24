@@ -8,11 +8,19 @@ https://dashboard-deaths-colombia-mlhca5hmgwrpqtykjh2ytq.streamlit.app/
 
 
 
-https://github.com/user-attachments/assets/634cb5f7-8ea6-4068-bcdc-efb4ad892345
+https://github.com/user-attachments/assets/51b78a5e-02de-446c-a5eb-2c059ceab1cb
+
+
+
+
 
 Also you can see how html tables are created by pushing the button "Generar mapa" .This map has been created with the libraries Folium and Geopy
 
 
 
-https://github.com/user-attachments/assets/c7921dfe-195d-4e58-b4a9-dd850e03c2d3
+https://github.com/user-attachments/assets/7cd63ecb-a7a8-42b7-b34e-e867e7110be4
+
+
+
+
 
